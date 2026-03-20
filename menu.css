@@ -1,0 +1,75 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: url("") no-repeat center center fixed;
+  background-size: cover;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+.navbar {
+  background-color: #ffcc00; /* bright yellow bar */
+  padding: 10px;
+  text-align: center;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+}
+.category-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns */
+  gap: 20px;
+  width: 90%;
+  margin: 60px auto;
+  padding: 30px;
+  background-color: rgba(255, 255, 0, 0.5); /* yellow overlay so graffiti blends */
+  border-radius: 12px;
+  backdrop-filter: blur(4px);
+}
+
+.category-box {
+  background-color: rgba(255, 255, 255, 0.9); /* semi-transparent yellow */
+  border-radius: 10px;
+  text-align: center;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.25);
+  height: 250px;          /* fixes uneven heights */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.category-box img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.category-box h2 {
+  margin-top: 10px;
+  font-size: 1.3rem;
+  color: #222;
+ 
+}
+.category-box a {
+  text-decoration: none;   /* removes underline */
+  color: inherit;          /* makes text use the box’s color */
+  display: block;          /* ensures the whole box is clickable */
+}
